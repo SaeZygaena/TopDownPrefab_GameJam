@@ -16,12 +16,12 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Spawn",
+                    "name": "Reset",
                     "type": "Button",
                     "id": "d2b2595d-7ba1-4008-9c20-851185204a59",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
@@ -128,11 +128,11 @@
                 {
                     "name": "",
                     "id": "430e1a8a-4d7b-44e5-9990-7e098b1a67d7",
-                    "path": "<Keyboard>/q",
-                    "interactions": "",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "Press",
                     "processors": "",
                     "groups": "",
-                    "action": "Spawn",
+                    "action": "Reset",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

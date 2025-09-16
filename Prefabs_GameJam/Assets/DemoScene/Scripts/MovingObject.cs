@@ -8,6 +8,7 @@ public class MovingObject : MonoBehaviour
     [SerializeField] private float speed = 5;
     [SerializeField] private bool autoMove = true;
     [SerializeField] private bool looping = true;
+    [SerializeField] private bool Reverse = false;
 
     private int currentIndex = 0;
     private Transform currentTarget;
@@ -18,7 +19,10 @@ public class MovingObject : MonoBehaviour
         //Set la position et l'index initial a la première valeur de la liste 
         if (positionList.Count > 0)
         {
-            currentIndex = 0;
+            if (!Reverse)
+                currentIndex = 0;
+            else
+                currentIndex = 1;
             currentTarget = positionList[currentIndex];
         }
 

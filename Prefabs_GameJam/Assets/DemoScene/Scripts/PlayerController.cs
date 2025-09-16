@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,6 +9,8 @@ public class PlayerController : MonoBehaviour
     private PlayerActions inputActions;
 
     private Vector2 moveInput;
+
+    private Coroutine speedCoroutine;
 
     [SerializeField] private float speed = 100;
     [SerializeField] private float acceleration = 20;
@@ -45,4 +49,28 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
     }
+
+    public void SpeedUp()
+    {
+
+        if (speedCoroutine != null)
+        {
+            StopCoroutine(speedCoroutine);
+        }
+
+        speedCoroutine = StartCoroutine(TimerSpeedUp());
+    }
+
+    IEnumerator TimerSpeedUp()
+    {
+        acceleration = 100f;
+        yield return new WaitForSeconds(2f);
+        acceleration = 20f;
+    }
+
+    public void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    } 
+
 }
