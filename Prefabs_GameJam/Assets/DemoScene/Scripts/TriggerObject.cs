@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class TriggerObject : MonoBehaviour
 {
@@ -13,13 +14,22 @@ public class TriggerObject : MonoBehaviour
     {
         // "OnTriggerEnterEvent?" est équivaux a écrire if(OnTriggerEnterEvent != null) {...} 
         // On fait cette verification car unity enveras une érreur si on essaye d'appeler l'event alors que rien c'est lier a l'event
-      
+
 
         if (collision.CompareTag("Player"))
         {
             OnTriggerEnterEvent?.Invoke(collision.gameObject);
-            OnTriggerNextLevel?.Invoke(collision.gameObject);
             OnTriggerSpeedUp?.Invoke(collision.gameObject);
+
+
+
+        }
+        if (collision.CompareTag("Trash"))
+        {
+            if (SceneManager.GetActiveScene().name == "Home_Scene")
+                SaveHome.Instance.isHome = true;
+
+            OnTriggerNextLevel?.Invoke(collision.gameObject);
         }
 
     }

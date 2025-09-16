@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4182089039573893894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Borders_Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4435881313622461857, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010841100098566918, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -177,6 +185,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4435881313622461857, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010841100098566918, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -246,6 +262,14 @@ PrefabInstance:
     - target: {fileID: 4435881313622461857, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
       propertyPath: m_Name
       value: WallObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435881313622461857, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010841100098566918, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -324,6 +348,14 @@ PrefabInstance:
     - target: {fileID: 4435881313622461857, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
       propertyPath: m_Name
       value: WallObject (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435881313622461857, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010841100098566918, guid: 0848d81f4618f7045b89e8c136a9b958, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
