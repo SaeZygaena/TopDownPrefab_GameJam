@@ -1,3 +1,4 @@
+using System.Data.Common;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,9 @@ public class TriggerObject : MonoBehaviour
     public UnityEvent<GameObject> OnTriggerNextLevel;
     public UnityEvent<GameObject> OnTriggerSpeedUp;
 
+    public int id = 0;
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         // "OnTriggerEnterEvent?" est équivaux a écrire if(OnTriggerEnterEvent != null) {...} 
@@ -19,7 +23,12 @@ public class TriggerObject : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             OnTriggerEnterEvent?.Invoke(collision.gameObject);
-            OnTriggerSpeedUp?.Invoke(collision.gameObject);
+
+            if (id == 2)
+            {
+                Destroy(gameObject);
+                OnTriggerSpeedUp?.Invoke(collision.gameObject);
+            }
 
 
 

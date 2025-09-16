@@ -57,12 +57,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3497718599303975775, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7336298474659753992, guid: ec6f06ae4a10a654880f1724b856c55c, type: 3}
+    - target: {fileID: 3497718599303975775, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
       propertyPath: m_Color.b
-      value: 0.83139783
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3497718599303975775, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
       propertyPath: m_Color.g
-      value: 0.12641507
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3497718599303975775, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
       propertyPath: m_Color.r
@@ -71,6 +75,10 @@ PrefabInstance:
     - target: {fileID: 8473583553793796895, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
       propertyPath: m_Name
       value: ObjectTrigger_SpeedUp Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8696524662226714387, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
+      propertyPath: id
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8696524662226714387, guid: f2e8e1713d1275248ad98fec586b36fc, type: 3}
       propertyPath: OnTriggerSpeedUp.m_PersistentCalls.m_Calls.Array.size
