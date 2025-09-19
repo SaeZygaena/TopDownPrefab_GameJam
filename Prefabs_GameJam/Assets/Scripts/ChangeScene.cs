@@ -8,5 +8,7 @@ public class ChangeScene : MonoBehaviour
     public void ChangingScene()
     {
         SceneManager.LoadScene(scene);
+        AudioManager.Instance.SetMusicClip(scene);
+        AudioManager.Instance.PlayMusic();
     }
 }
